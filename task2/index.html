@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Побудова еліпса</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Побудова еліпса</h1>
+    <h3>Задайте довжину півосей:</h3>
+    <label for="a">горизонтальна (a):</label>
+    <input type="number" id="a" name="a" value="100">
+    <label for="b">вертикальна (b):</label>
+    <input type="number" id="b" name="b" value="50">
+    <button onclick="drawEllipse()">Побудувати еліпс</button>
+
+    <div class="container">
+        <h2>Еліпс методом мозаїки</h2>
+        <div class="mosaic-container" id="mosaic-container">
+            <div class="axis x-axis"></div>
+            <div class="axis y-axis"></div>
+        </div>
+        <h2>Еліпс за допомогою SVG</h2>
+        <div class="svg-container">
+            <div class="axis x-axis"></div>
+            <div class="axis y-axis"></div>
+            <svg id="svg-container" width="500" height="500"></svg>
+        </div>
+        <h2>Еліпс за допомогою Canvas</h2>
+        <div class="canvas-container">
+            <div class="axis x-axis"></div>
+            <div class="axis y-axis"></div>
+            <canvas id="canvas-container" width="500" height="500"></canvas>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
